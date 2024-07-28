@@ -33,7 +33,7 @@ export function SiteHeader() {
         className="flex flex-row items-center justify-between px-4 py-2"
       >
         <Link href="/" className={cn("font-semibold focus-ring text-2xl")}>
-          Nexautem
+          Next Auth Template
         </Link>
 
         <div className="flex items-center">
