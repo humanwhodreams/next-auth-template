@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { FaRegHandPointer } from "react-icons/fa";
-import { HandMetal } from "lucide-react";
 import { SectionWrapper } from "@/components/section-wrapper";
 
 export default function Home() {
