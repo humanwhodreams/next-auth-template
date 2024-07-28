@@ -36,7 +36,7 @@ interface Props {
 
 export function AuthCard({ children, options }: Props) {
   return (
-    <Card className="shadow-md bg-muted/55 w-full sm:w-[400px]">
+    <Card className="border-none w-full sm:w-[400px]">
       <CardHeader>
         <CardTitle>{options.header.title}</CardTitle>
         <CardDescription>{options.header.description}</CardDescription>
@@ -56,7 +56,7 @@ export function AuthCard({ children, options }: Props) {
         {options.redirect.message}
         <Link
           href={options.redirect.component.href}
-          className="ml-1 font-medium transition-colors duration-200 hover:text-tertiary"
+          className="ml-1 font-medium transition-colors duration-200 hover:text-tertiary focus-ring"
         >
           {options.redirect.component.label}
         </Link>
