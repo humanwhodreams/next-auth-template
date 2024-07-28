@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={cn("antialiased", inter.className)}>{children}</body>
+      <body className={cn("dark antialiased", inter.className)}>{children}</body>
     </html>
   );
 }
