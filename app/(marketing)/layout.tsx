@@ -9,7 +9,7 @@ export default function MarketingLayout({ children }: Readonly<Props>) {
   return (
     <>
       <SiteHeader />
-      {children}
+      <main className="my-12">{children}</main>
     </>
   );
 }
