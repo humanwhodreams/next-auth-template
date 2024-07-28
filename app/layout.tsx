@@ -1,10 +1,9 @@
 import "@/style/globals.css";
 
-import { Inter } from "next/font/google";
+import { _inter, _jetbrains } from "@/lib/local-fonts";
+
 import type { Metadata } from "next";
 import { cn } from "@/lib/utils";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Next Auth Template",
@@ -19,7 +18,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={cn("dark antialiased", inter.className)}>{children}</body>
+      <body
+        className={cn(
+          "dark antialiased font-Inter",
+          _inter.variable,
+          _jetbrains.variable
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }

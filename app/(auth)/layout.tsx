@@ -9,7 +9,7 @@ export default function AuthLayout({ children }: Readonly<Props>) {
   return (
     <>
       <SiteHeader />
-      <main className="my-24">{children}</main>
+      <main className="my-12">{children}</main>
     </>
   );
 }
