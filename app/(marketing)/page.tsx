@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <PageHeader className="mt-24">
-        <PageHeader.Title>Authentication example</PageHeader.Title>
+        <PageHeader.Title>Acme ✦ authentication</PageHeader.Title>
         <PageHeader.Lead>
           Authentication implemented in Next.js using Auth.js and other
           practices found across the Javascript ecosystem.
