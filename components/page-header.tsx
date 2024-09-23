@@ -22,7 +22,7 @@ function Title({ children }: TitleProps) {
   return (
     <h1
       className={cn(
-        "text-3xl md:text-4xl font-bold leading-tight tracking-tighter lg:leading-[1.1]"
+        "font-bold leading-tight tracking-tighter lg:leading-[1.1]"
       )}
     >
       {children}
