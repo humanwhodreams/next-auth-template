@@ -5,7 +5,7 @@ import { geist_mono, geist_sans } from "@/font";
 import type { Metadata } from "next";
 import { Providers } from "@/components/providers";
 import { cn } from "@/lib/cn";
-import { generateMetadata } from "@/utils/metadata";
+import { generateMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generateMetadata();
 
