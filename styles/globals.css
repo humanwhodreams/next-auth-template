@@ -25,8 +25,8 @@
     --accent: 0 0% 84%;
     --accent-foreground: 0 0% 6%;
 
-    --destructive: 0 90.6% 71%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 72.2% 50.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
 
     --border: 0 0% 88%;
     --input: 0 0% 88%;
@@ -56,8 +56,8 @@
     --accent: 0 0% 14%;
     --accent-foreground: 0 0% 94%;
 
-    --destructive: 0 90.6% 71%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 72.2% 50.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
 
     --border: 0 0% 12%;
     --input: 0 0% 12%;
@@ -87,6 +87,9 @@
   }
   p {
     @apply leading-7 [&:not(:first-child)]:mt-6;
+  }
+  code {
+    @apply font-geist-mono;
   }
   blockquote {
     @apply mt-6 border-l-2 pl-6 italic;
