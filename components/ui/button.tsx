@@ -2,10 +2,14 @@ import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/cn";
+import { focus_ring } from "@/lib/focus";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 group/button",
+  [
+    "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors disabled:pointer-events-none disabled:opacity-50",
+    focus_ring,
+  ],
   {
     variants: {
       variant: {
@@ -17,19 +21,20 @@ const buttonVariants = cva(
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-
-        // custom variants
-        text: "bg-transparent text-foreground hover:text-tertiary",
-        gloss:
-          "bg-secondary/45 text-secondary-foreground hover:bg-secondary/80 border border-input",
-        tertiary: "bg-tertiary text-tertiary-foreground hover:bg-tertiary/80",
+        link: "text-muted-foreground underline-offset-4 hover:underline",
+        "link-primary": "text-primary underline-offset-4 hover:underline",
+        text: "text-muted-foreground hover:text-foreground",
+        "text-primary": "text-muted-foreground hover:text-primary",
       },
       size: {
         default: "h-10 px-4 py-2",
+        xxs: "h-7 rounded-md px-3",
+        xs: "h-8 rounded-md px-3",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
         icon: "h-10 w-10",
+        "icon-sm": "h-9 w-9",
+        "icon-lg": "h-11 w-11",
       },
     },
     defaultVariants: {

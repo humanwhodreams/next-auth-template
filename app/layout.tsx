@@ -1,15 +1,13 @@
-import "@/style/globals.css";
+import "@/styles/globals.css";
 
-import { _inter, _jetbrains } from "@/lib/local-fonts";
+import { geist_mono, geist_sans } from "@/font";
 
 import type { Metadata } from "next";
-import { cn } from "@/lib/utils";
+import { Providers } from "@/components/providers";
+import { cn } from "@/lib/cn";
+import { generateMetadata } from "@/utils/metadata";
 
-export const metadata: Metadata = {
-  title: "Next Auth Template",
-  description:
-    "Kickstart your Next.js project with my template - It is Free by the way.",
-};
+export const metadata: Metadata = generateMetadata();
 
 export default function RootLayout({
   children,
@@ -20,12 +18,12 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning={true}>
       <body
         className={cn(
-          "dark antialiased font-Inter",
-          _inter.variable,
-          _jetbrains.variable
+          "relative antialiased font-geist-sans scroll-smooth",
+          geist_sans.variable,
+          geist_mono.variable
         )}
       >
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
