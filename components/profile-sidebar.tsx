@@ -24,11 +24,11 @@ const LINKS = [
     section: "Resources",
     links: [
       {
-        label: "Terms & Conditions",
+        label: "Terms & Conditions ↗",
         href: "/terms",
       },
       {
-        label: "Privacy",
+        label: "Privacy ↗",
         href: "/privacy",
       },
     ],
@@ -37,11 +37,11 @@ const LINKS = [
     section: "Company",
     links: [
       {
-        label: "Philosophy",
+        label: "Philosophy ↗",
         href: "/philosophy",
       },
       {
-        label: "About",
+        label: "About ↗",
         href: "/about",
       },
     ],
