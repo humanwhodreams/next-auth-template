@@ -24,6 +24,10 @@ const LINKS = [
     section: "Resources",
     links: [
       {
+        label: "Documentation ↗",
+        href: "#",
+      },
+      {
         label: "Terms & Conditions ↗",
         href: "/terms",
       },

@@ -10,7 +10,7 @@ export function CallToAction() {
         </Link>
       </Button>
       <Button type="button" variant={"text"} size={"sm"} asChild>
-        <Link href={"/docs"}>Documentation</Link>
+        <Link href={"#"}>Documentation</Link>
       </Button>
     </div>
   );
