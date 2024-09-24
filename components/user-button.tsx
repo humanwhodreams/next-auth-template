@@ -17,6 +17,7 @@ export function UserButton({ description, user }: Props) {
       className={cn(
         buttonVariants({
           variant: "muted-reverse",
+          size: "xxs",
           className: "rounded-full px-1",
         })
       )}
@@ -24,7 +25,7 @@ export function UserButton({ description, user }: Props) {
     >
       {description ? <span className="ml-2">{description}</span> : null}
       <Avatar
-        size={32}
+        size={20}
         name={user.name}
         className={cn("mr-2", description && "mx-2")}
         colors={["#ffba08", "#f48c06", "#dc2f02", "#9d0208"]}
