@@ -1,25 +1,19 @@
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import Link from "next/link";
 
 export function PasswordForm() {
   return (
-    <form action="#" className="w-full mb-4 space-y-2">
-      <Label>Change password</Label>
-      <div className="flex items-center gap-4">
-        <Input
-          type="password"
-          placeholder="•••••••••••••••"
-          variant={"muted"}
-          dimension={"lg"}
-          className="text-base"
-          value={"•••••••••••••••"}
-          readOnly={true}
-          disabled={true}
-          aria-disabled={true}
-        />
-        <Button type="submit">Get instructions</Button>
+    <div className="w-full mb-4 space-y-2">
+      <h3>Change password</h3>
+      <div className="space-y-4">
+        <p className="p">
+          To change your password, instructions will be sent to your email
+          address.
+        </p>
+        <Button type="button" asChild>
+          <Link href={"#"}>Get instructions ↗</Link>
+        </Button>
       </div>
-    </form>
+    </div>
   );
 }
