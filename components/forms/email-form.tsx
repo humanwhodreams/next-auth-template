@@ -43,10 +43,7 @@ export function EmailForm() {
           manage your account.
         </p>
         <Form {...form}>
-          <form
-            onSubmit={form.handleSubmit(onSubmit)}
-            className="w-full mb-4 space-y-2"
-          >
+          <form onSubmit={form.handleSubmit(onSubmit)} className="w-full mb-4">
             <FormField
               control={form.control}
               name="email"
