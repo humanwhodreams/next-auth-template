@@ -27,7 +27,7 @@ export function ThemeToggle() {
       <Tooltip>
         <TooltipTrigger
           type="button"
-          className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
+          className={cn(buttonVariants({ variant: "ghost", size: "icon-xs" }))}
           onClick={() => setTheme(theme === "light" ? "dark" : "light")}
         >
           {theme === "light" ? (
