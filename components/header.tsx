@@ -23,7 +23,7 @@ export function Header({ classes }: Props) {
     >
       <nav
         className={cn(
-          "flex items-center justify-between h-16 max-w-4xl px-4 mx-auto sm:px-6 md:px-8 lg:px-0",
+          "flex items-center justify-between h-12 px-4 sm:px-6 md:px-8 lg:px-10",
           classes?.nav?.className
         )}
       >
