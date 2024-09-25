@@ -6,7 +6,7 @@ const password_schema = z
   .max(25, "Password must be fewer than 25 characters")
   .regex(
     /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,26}$/,
-    "Password format - 8 characters, at least 1 uppercase letter, 1 lowercase letter, 1 number and 1 special character"
+    "Password format - at least 8 characters, at least 1 uppercase letter, 1 lowercase letter, 1 number and 1 special character"
   );
 
 const user_schema = z.object({
