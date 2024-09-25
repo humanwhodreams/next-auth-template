@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 
 function generateMetadata(): Metadata {
   return {
-    title: "Next Auth Template",
+    title: "Acme ✦ authentication",
     description:
-      "Authentication in Next.js using Auth.js formerly known as Next-Auth.js",
+      "Authentication implemented in React projects — providing flows, components, notes, and resources found across the Javascript/Typescript ecosystem.",
   } satisfies Metadata;
 }
 
