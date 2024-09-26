@@ -6,7 +6,7 @@ export function PasswordForm() {
     <div className="w-full mb-4 space-y-2">
       <h3>Change password</h3>
       <div className="space-y-4">
-        <p className="p">
+        <p className="p text-muted-foreground">
           To change your password, instructions will be sent to your email
           address.
         </p>

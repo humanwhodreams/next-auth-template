@@ -38,7 +38,7 @@ export function NameForm() {
       <h3>Change display name</h3>
 
       <div className="space-y-4">
-        <p className="p">
+        <p className="p text-muted-foreground">
           Change your name across the site. This is your display name across the
           site. it affects your <i className="muted">profile avatar</i> too.
         </p>

@@ -38,7 +38,7 @@ export function EmailForm() {
       <h3>Change email address</h3>
 
       <div className="space-y-4">
-        <p className="p">
+        <p className="p text-muted-foreground">
           Change your email address. This is your primary email address used to
           manage your account.
         </p>
