@@ -19,7 +19,7 @@ export default function Home() {
         <div className="mt-6">
           <UserButton
             description="signed in as"
-            user={{ name: "Acme Raccoon" }}
+            user={{ name: "Humanwhodreams" }}
           />
         </div>
       </PageHeader>

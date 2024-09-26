@@ -30,7 +30,7 @@ export function Header({ classes }: Props) {
         <Brand />
         <div className="flex items-center gap-x-2">
           <ThemeToggle />
-          <UserButton user={{ name: "Acme Raccoon" }} />
+          <UserButton user={{ name: "Humanwhodreams" }} />
         </div>
       </nav>
     </header>
