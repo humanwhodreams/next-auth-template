@@ -13,14 +13,25 @@ export const users = pgTable("users", {
 export const profiles = pgTable("profiles", {
   id: serial("id").primaryKey(),
   userId: integer("user_id")
-    .notNull()
-    .references(() => users.id),
+    .references(() => users.id, { onDelete: "cascade" })
+    .notNull(),
   bio: text("bio"),
 });
 
+/*
+ *
+ * Database Relations.
+ * These relations are set on the application level, no need for db:generate,
+ * db:migrate or db:push
+ */
+
 export const users_relations = relations(users, ({ one }) => ({
-  profiles: one(profiles, {
-    fields: [users.id],
-    references: [profiles.userId],
+  profiles: one(profiles),
+}));
+
+export const profiles_relations = relations(profiles, ({ one }) => ({
+  user: one(users, {
+    fields: [profiles.userId],
+    references: [users.id],
   }),
 }));
